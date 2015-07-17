@@ -208,20 +208,23 @@ function towData (){
 		//console.log(actual_JSONTow.data[0]);
 		
 		
+		//didn't add this in the github yet!!!	
 		for(var i = 0; i < actual_JSONTow.data.length; i++){
 			var actualTowJSON_object = {
-				var tow = actual_JSONTow.data[i];
-				var towRange = actual_JSONTow.data[i][9] + "-" + actual_JSONTow.data[i][10] + " " + actual_JSONTow.data[i][11];
-				var daysTowOperating = actual_JSONTow.data[i][17];	
-				var dateTowStart = actual_JSONTow.data[i][15];
-				var dateTowEnd = actual_JSONTow.data[i][16];
-				var timeTowStart = actual_JSONTow.data[i][19]
-				var timeTowEnd = actual_JSONTow.data[i][20];
-			}
+				"tow" : actual_JSONTow.data[i],
+				"towRange" : actual_JSONTow.data[i][9] + "-" + actual_JSONTow.data[i][10] + " " + actual_JSONTow.data[i][11],
+				"daysTowOperating" : actual_JSONTow.data[i][17],	
+				"dateTowStart" : actual_JSONTow.data[i][15],
+				"dateTowEnd" : actual_JSONTow.data[i][16],
+				"timeTowStart" : actual_JSONTow.data[i][19],
+				"timeTowEnd" : actual_JSONTow.data[i][20]
+			}	
+		towDataJSON_list.push(actualTowJSON_object);
 		}
 		
 	});
 }
+
 
 garageData();
 disabilityData();
