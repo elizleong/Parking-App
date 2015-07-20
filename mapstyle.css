@@ -1,0 +1,581 @@
+/* 
+h1 - park'd on homepage nav bar - white small
+h2 - dark blue -"about me" on about page
+h3 - light blue names on about page
+ */
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: 'bold font';
+	src: url(geometr415-blk-bt-black.ttf);
+}
+
+@font-face {
+	font-family: 'med font';
+	src: url(geometr415-md-bt-medium.ttf);
+}
+
+
+
+/* 
+
+
+Homepage/Introduction to the website! :) 
+
+
+ */
+
+#intro {
+	letter-spacing: 4px;
+	font-family: 'bold font';
+	font-size: 60px;
+	line-height: 5%;
+}
+
+#left {
+	text-align: left;
+	float: left;
+	top:0px;
+	left:30px;
+	position: fixed;
+	margin:0px;
+}
+
+#right {
+	text-align:right;
+	bottom:0px;
+	position: fixed;
+	right:25px;
+}
+
+
+body {
+	background: #3b97d3;
+	color: #ededed;
+	font-family: 'bold font';
+	font-size: 65px;
+
+}
+
+/* 
+*
+ *
+*
+Main page of the site! :) 
+*
+ *
+*
+ */
+ 
+  
+
+h1 {
+	font-family: 'med font';
+	font-size: 25px;
+	letter-spacing: 1px;
+	padding: 10px 0px 15px 0px; 
+	margin: 0px;
+	justify-content: center;
+}
+
+
+
+/* 
+Navigation container! 
+ */
+ 
+.container {
+	background: #35495e;
+	padding: 5px;
+	margin: 0px;
+	text-align: center;
+	justify-content: center; 
+	float: left
+	background:none;
+	
+}
+
+.container button {
+	background:none;
+	border:none;
+	top:10px;
+	position: fixed;
+}
+
+
+#showLeft {
+	left: 15px;
+}
+
+
+#search {
+	right: 15px;
+}
+
+
+.legend {
+  position: absolute; 
+  top: 50%;
+  height: 325px;
+  width: 200px;
+  margin-top: -140px;
+}
+
+.legend > div {
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   margin: 0px 0px 20px 35px;  
+}
+
+div > p {
+margin: 5px 50px;
+color: #35495E;
+font-family: 'med font';
+width: 500px;
+height: 500px;
+}
+
+.first {
+	color: #35495E;
+	font-family: 'bold font';
+	letter-spacing: 0px;
+	font-size: 30px;
+	width:40px;
+	padding-left: 50px;
+	padding-bottom: 10px;
+}
+
+.handicap {
+  background: #3B97D3 ; 
+}
+.streetcleaning {
+  background: #F0C419;
+}
+.towaway {
+  background: #E64C3C;
+}
+.zoneparking {
+  background: #239B54;
+}
+.meters {
+  background: #4FBA70;
+  
+}
+.garages {
+  background: #955BA5;
+  
+}
+
+.fixed{
+	position: fixed;
+	border-radius:3px;
+	height: 325px;
+	width: 275px;
+	margin:25px;
+	background: #ededed;
+	bottom: 0;
+	right:0;
+}
+
+body, html { font-size: 100%; 	padding: 0; margin: 0;}
+
+
+
+/* BUTTONS!! */
+
+
+#pushOut{
+	border:none;
+	background:none;
+	float:right;
+	font-family: 'bold font'
+	size: 30px;
+	color:white;
+	height:50px;
+	width:50px;
+	margin:0;
+}
+
+
+/* 
+.main >  button {
+	border: none;
+	background: #35495e;
+	margin: 15px;
+	padding: 0px 10px 0px 0px;
+}
+ */
+
+
+
+/* 
+HOMEPAGE BUTTON!!!! = OTHERS BUTTON
+ */
+.others > section button {
+	padding: 1.5em;
+	display: block;
+	width: 100%;
+	cursor: pointer;
+	margin: 0;
+	margin-bottom: 30px;
+	float: right;
+	border: none;
+	background: #24577b;
+	color: #fff;
+	font-family: 'bold font';
+	border-radius: 5px;
+
+}
+
+.others > section {
+	max-width: 260px;
+	width: 90%;
+	margin: 0 auto;
+	float: right;
+}
+
+
+/* IMPORTANT General styles for all menus */
+.cbp-spmenu {
+	background: #3B97D3;
+	position: fixed;
+}
+
+/* LINK STYLES */
+
+.cbp-spmenu a {
+	display: block;
+	color: #ededed;
+	font-size: 25px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	
+}
+.cbp-spmenu a:hover {
+	background: #35495e;
+}
+
+.container a {
+	color: #ededed;
+	text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.others a {
+	color: #ededed;
+	text-decoration: none;
+}
+
+.others a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Orientation-dependent styles for the content of the menu */
+
+/* extends menu to the bottom */
+
+.cbp-spmenu-vertical {
+	width: 20%;
+	height: 100%;
+	top: 0;
+	z-index:10000;
+}
+
+/* Spacing!! */
+#toolbartext a {
+	padding: 1.5em;
+}
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+	left: -20%;
+}
+
+
+.cbp-spmenu-left.cbp-spmenu-open {
+	left: 0px;
+}
+
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.cbp-spmenu-push {
+	background: white;
+	margin:0;
+}
+
+
+/* 
+*
+ *
+*
+ABOUT page of the site! :) 
+*
+ *
+*
+ */
+
+/* 
+nav {
+	height: 100px;
+	background: gray;
+
+}
+ */
+ 
+ /* TOOLBAR/navigation on about page */
+ 
+.container2 {
+	color: #3B97D3;
+	text-align:center;
+	justify-content: center;
+}
+
+.container2 button {
+	background:none;
+	border:none;
+	top:10px;
+	position: fixed;
+}
+
+.container2 {
+	background: #ededed;
+	padding: 5px;
+}
+
+.container2 a {
+	color: #24577b;
+	text-decoration: none;
+}
+
+.container2 a:hover {
+    text-decoration: none;
+    color: #24577b;
+}
+
+main a {
+	color: #24577b;
+	text-decoration:none;
+}
+
+.about {
+  color: #24577b;
+  text-align: center;
+}
+
+/* grid about page */
+
+main div {
+  border-radius: 50%;
+  padding: 100px;
+
+}
+
+ /* circles of pictures about page */
+.circles {
+  display: flex;
+  justify-content: center;
+}
+.circles div {
+ margin-right: 85px;
+ margin-top: 40px;
+}
+
+ /* pictures about page */
+.ally {
+  background: url(ally.png) 90% 55% no-repeat; 
+}
+.olivia {
+  background: url(olivia2.png) 60% 10% no-repeat;
+}
+.elizabeth {
+  background: url(eliz.png) 40% 40% no-repeat;
+}
+.kailey {
+  background: url(kailey1.png) 45% 10% no-repeat;
+  
+}
+
+.names {
+  display: flex;
+  justify-content: center;
+  font-family: 'bold font';
+} 
+.names h3 {
+  margin: 40px;
+  margin-bottom:10px;
+  width: 200px;
+}   
+
+.subhead {
+	display: flex;
+	justify-content: center;
+  	font-family: 'med font';
+	font-size: 20px;
+} 
+.subhead p {
+  margin: 40px;
+  margin-top: 0;
+  width: 200px;
+
+}
+
+.describe{
+	font-family: 'med font';
+	font-size: 15px;
+}
+
+
+/* 
+OLIVIAS CONFUSING CODE
+ */
+		.sidebar {
+		position:absolute;
+		width:20%;
+		height:91%;
+		left:0;
+		bottom:0;
+		overflow:hidden;
+		}
+		.pad2 {
+		padding:20px;
+		}
+		
+		.quiet {
+		color:#888;
+		background:black;
+		}
+ 		
+		.map {
+		position:absolute;
+		top:9%;
+		left:20%;
+		width:80%;
+		bottom:0;
+		}
+		.heading {
+		background:#ededed;
+		color: #24577b;
+		border-bottom:1px solid white;
+		height:60px;
+		line-height:60px;
+		padding:0 20px;
+		padding-bottom: 20px;
+		}
+		
+		.listings {
+		height:100%;
+		overflow:auto;
+		padding-bottom:60px;
+		font-family: 'bold font';
+		background:#EEEEEE;
+		}
+		.listings .item {
+		display:block;
+		border-bottom:1px solid white;
+		font-family: 'med font';
+		color:gray;
+		
+		padding:10px;
+		text-decoration:none;
+		text-transform: uppercase;
+		}
+		.listings .item:last-child { border-bottom:none; }
+		.listings .item .title {
+		display:block;
+		color:#955BA5;
+		
+		}
+		.listings .item .title small { font-weight:400; }
+		.listings .item.active .title,
+		.listings .item .title:hover { color:#742B8B; }
+		.listings .item.active {
+		background:#f8f8f8;
+		}
+
+		::-webkit-scrollbar {
+		width:3px;
+		height:3px;
+		border-left:0;
+		background:rgba(0,0,0,0.1);
+		}
+		::-webkit-scrollbar-track {
+		background:none;
+		}
+		::-webkit-scrollbar-thumb {
+		background:#35495E;
+		border-radius:2px;
+		}
+
+		.clearfix { display:block; }
+		.clearfix:after {
+		content:'.';
+		display:block;
+		height:0;
+		clear:both;
+		visibility:hidden;
+}
+ 
+
+/* Marker tweaks */
+		.leaflet-popup-close-button {
+		display:none;
+		}
+		.leaflet-popup-content {
+		font:400 15px/22px 'med font', 'Helvetica Neue', Sans-serif;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 1px;
+		padding:0;
+		width:250px;
+		}
+		.leaflet-popup-content-wrapper {
+		padding:0;
+		}
+		
+/* GARAGE TYPE */
+		
+		.leaflet-popup-content h3 {
+		background:#955BA5;
+		color:white;
+		margin:0;
+		display:block;
+		padding:10px;
+		border-radius:3px;
+		font-weight:700;
+		margin-top:-15px;
+		}
+		
+/* 
+		HANDICAP COLORS
+ */
+
+		.leaflet-popup-content h2 {
+		background:#3B97D3;
+		color:white;
+		margin:0;
+		display:block;
+		padding:10px;
+		border-radius:3px;
+		font-weight:700;
+		margin-top:-15px;
+		}
+		.leaflet-popup-content div {
+		padding:10px;
+		}
+		.leaflet-container .leaflet-marker-icon { cursor:pointer; }
