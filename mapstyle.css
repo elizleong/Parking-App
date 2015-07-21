@@ -15,15 +15,41 @@ h3 - light blue names on about page
 	src: url(geometr415-md-bt-medium.ttf);
 }
 
+.logofront {
+height:5%;
+width: 5%;
+text-align: center;
+margin-top:5%;
+margin-bottom: 5%;
 
+}
+
+.frontpage {
+background: #d0edf5;
+text-align: center;
+
+}
+
+.container img {
+margin-top:3px;
+
+}
+
+.logo {
+height:60%;
+width: 60%;
+text-align: center;
+margin-top:2%;
+margin-bottom: 5%;
+
+}
 
 /* 
 
-
 Homepage/Introduction to the website! :) 
 
-
  */
+ 
 
 #intro {
 	letter-spacing: 4px;
@@ -85,7 +111,7 @@ Navigation container!
  */
  
 .container {
-	background: #35495e;
+	background: #253648;
 	padding: 5px;
 	margin: 0px;
 	text-align: center;
@@ -98,7 +124,7 @@ Navigation container!
 .container button {
 	background:none;
 	border:none;
-	top:10px;
+	top:5px;
 	position: fixed;
 }
 
@@ -116,9 +142,9 @@ Navigation container!
 .legend {
   position: absolute; 
   top: 50%;
-  height: 325px;
+  height: 275px;
   width: 200px;
-  margin-top: -140px;
+  margin-top: -130px;
 }
 
 .legend > div {
@@ -142,8 +168,9 @@ height: 500px;
 	letter-spacing: 0px;
 	font-size: 30px;
 	width:40px;
-	padding-left: 50px;
+	padding-left: 60px;
 	padding-bottom: 10px;
+	padding-top: 10px;
 }
 
 .handicap {
@@ -156,7 +183,7 @@ height: 500px;
   background: #E64C3C;
 }
 .zoneparking {
-  background: #239B54;
+  background: #f0c419;
 }
 .meters {
   background: #4FBA70;
@@ -169,8 +196,8 @@ height: 500px;
 
 .fixed{
 	position: fixed;
-	border-radius:3px;
-	height: 325px;
+	border-radius:5px;
+	height: 275px;
 	width: 275px;
 	margin:25px;
 	background: #ededed;
@@ -181,20 +208,20 @@ height: 500px;
 body, html { font-size: 100%; 	padding: 0; margin: 0;}
 
 
-
 /* BUTTONS!! */
 
 
 #pushOut{
 	border:none;
 	background:none;
-	float:right;
 	font-family: 'bold font'
-	size: 30px;
 	color:white;
-	height:50px;
-	width:50px;
-	margin:0;
+	float: right;
+	height:50px
+	width: 50px;
+	text-align: right;
+	margin-top:15px;
+	/* padding-bottom: 10px; */
 }
 
 
@@ -238,7 +265,7 @@ HOMEPAGE BUTTON!!!! = OTHERS BUTTON
 
 /* IMPORTANT General styles for all menus */
 .cbp-spmenu {
-	background: #3B97D3;
+	background: #35495e;
 	position: fixed;
 }
 
@@ -253,7 +280,7 @@ HOMEPAGE BUTTON!!!! = OTHERS BUTTON
 	
 }
 .cbp-spmenu a:hover {
-	background: #35495e;
+	background: #3b97d3;
 }
 
 .container a {
@@ -291,6 +318,8 @@ HOMEPAGE BUTTON!!!! = OTHERS BUTTON
 /* Spacing!! */
 #toolbartext a {
 	padding: 1.5em;
+	margin-top: 56px;
+	text-align: left;
 }
 
 /* Vertical menu that slides from the left or right */
@@ -339,43 +368,17 @@ nav {
  */
  
  /* TOOLBAR/navigation on about page */
- 
-.container2 {
-	color: #3B97D3;
-	text-align:center;
-	justify-content: center;
 }
-
-.container2 button {
-	background:none;
-	border:none;
-	top:10px;
-	position: fixed;
-}
-
-.container2 {
-	background: #ededed;
-	padding: 5px;
-}
-
-.container2 a {
-	color: #24577b;
-	text-decoration: none;
-}
-
-.container2 a:hover {
-    text-decoration: none;
-    color: #24577b;
-}
-
 main a {
 	color: #24577b;
 	text-decoration:none;
 }
 
 .about {
-  color: #24577b;
   text-align: center;
+  justify-content: center;
+  color: #24577b;
+
 }
 
 /* grid about page */
@@ -392,8 +395,9 @@ main div {
   justify-content: center;
 }
 .circles div {
- margin-right: 85px;
+ margin: 0px 40px;
  margin-top: 40px;
+
 }
 
  /* pictures about page */
@@ -427,19 +431,48 @@ main div {
 	justify-content: center;
   	font-family: 'med font';
 	font-size: 20px;
+	margin-bottom: 0;
+
 } 
 .subhead p {
-  margin: 40px;
+  margin: 0px 40px;
   margin-top: 0;
   width: 200px;
-
+  margin-bottom: 0;
 }
 
 .describe{
 	font-family: 'med font';
 	font-size: 15px;
+	justify-content: center;
+	text-align: center;
+	color: #24577b;
+	margin: 0px 130px;
+	line-height: 20px;
+	margin-top: 30px;
 }
 
+.describe img {
+height: 200px;
+width: auto;
+padding:0;
+margin:0;
+text-align: center;
+justify-content: center;
+margin-top: 20px;
+}
+
+.describe a {
+color: #24577b;
+text-decoration: none;
+}
+.describe center {
+font-size: 50px;
+font-family: 'bold font';
+padding-top: 0px;
+padding-bottom: 25px;
+text-align: center;
+}
 
 /* 
 OLIVIAS CONFUSING CODE
@@ -453,7 +486,7 @@ OLIVIAS CONFUSING CODE
 		overflow:hidden;
 		}
 		.pad2 {
-		padding:20px;
+		padding:30px;
 		}
 		
 		.quiet {
@@ -472,38 +505,45 @@ OLIVIAS CONFUSING CODE
 		background:#ededed;
 		color: #24577b;
 		border-bottom:1px solid white;
-		height:60px;
+		height:90px;
 		line-height:60px;
 		padding:0 20px;
-		padding-bottom: 20px;
+		padding-bottom: 40px;
 		}
 		
 		.listings {
 		height:100%;
 		overflow:auto;
-		padding-bottom:60px;
+		padding-bottom:80px;
 		font-family: 'bold font';
 		background:#EEEEEE;
 		}
 		.listings .item {
 		display:block;
+		text-decoration:none;
 		border-bottom:1px solid white;
 		font-family: 'med font';
 		color:gray;
-		
-		padding:10px;
+		padding:20px;
 		text-decoration:none;
+
 		text-transform: uppercase;
 		}
 		.listings .item:last-child { border-bottom:none; }
 		.listings .item .title {
-		display:block;
-		color:#955BA5;
+		display: block;
+		text-decoration:none;
+		color:#3b97d3;
+		}
+		.listings .item .garageTitle {
+		display: block;
+		color:#955ba5;
 		
 		}
-		.listings .item .title small { font-weight:400; }
+
 		.listings .item.active .title,
-		.listings .item .title:hover { color:#742B8B; }
+		.listings .item .title:hover { color:#24577b; }
+		.listings .item:hover { background:white; }
 		.listings .item.active {
 		background:#f8f8f8;
 		}
@@ -579,3 +619,11 @@ OLIVIAS CONFUSING CODE
 		padding:10px;
 		}
 		.leaflet-container .leaflet-marker-icon { cursor:pointer; }
+		
+/* 
+		#key img {
+		height: 50%
+		width: auto;
+		}
+ */
+		
